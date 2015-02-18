@@ -27,12 +27,17 @@ development:
   database: snack_app
 ```
 
+(Hint: indentation matters in your `.yml` file.)
+
 Create `Rakefile`:
 
 ```ruby
 require './app'
 require 'sinatra/activerecord/rake'
 ```
+
+(Hint: if you named your file something other than `app.rb`, then it
+needs to be reflected here.)
 
  Test it by running `rake -T`
 
