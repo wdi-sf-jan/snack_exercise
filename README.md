@@ -11,6 +11,7 @@ Integrate ActiveRecord into Sinatra
 
 Install the necessary gems:
 
+- `gem install activerecord`
 - `gem install sinatra-activerecord`
 - `gem install rake`
 
