@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+  <head><title></title></head>
+  <body>
+    <h1>Edit</h1>
+    <form action="/snacks/<%=@snack.id%>" method="POST">
+      <input type="hidden" name="_method" value="PUT">
+      <input type="text" name="snack_name" value="<%=@snack.name%>">
+      <input type="submit" value="Change">
+    </form>
+  </body>
+</html>

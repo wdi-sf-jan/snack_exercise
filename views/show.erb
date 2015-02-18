@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head><title></title></head>
+  <body>
+    <h1><%= @snack.name %></h1>
+    <p>This is a really good snack</p>
+    <a href="/snacks/<%=@snack.id%>/edit">Edit</a>
+    <form action="/snacks/<%=@snack.id%>" method="POST" style="display:inline-block;">
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" value="Delete">
+    </form>
+  </body>
+</html>

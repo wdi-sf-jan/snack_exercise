@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <ul>
+      <% @snacks.each do |treat| %>
+      <li>
+        <a href="/snacks/<%=treat.id%>"><%= treat.name %></a>
+      </li>
+      <% end %>
+    </ul>
+    <a href="/snacks/new">Add new snack</a>
+  </body>
+</html>
